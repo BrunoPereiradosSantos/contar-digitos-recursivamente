@@ -14,7 +14,9 @@ Retorno: aparece 2 vezes
 Retorno: aparece 3 vezes
 
 •A validação da entrada e do dígito deve ser feito na maind aaplicação e não na funçãorecursiva;
+
 •O Código deve apresentar, em formato de comentário, como foi definida a condição de parada;
+
 •O Código deve apresentar, em formato de comentário, como foi definida a relação de chamada dos passos;
 
 Dica para a resolução do exercício
