@@ -5,14 +5,14 @@ public class ContaDigitoController {
 		super();
 	}
 	
-	public int repetido(int n, int k) {
-		int c;
-		if(n == 0) return 0; //condição de parada se n chegar a zero, fim do algoritmo
-		if( n % 10 == k) { //comparo os 2 últimos algarismos do número n, se forem iguais a k, incremento o contador
-			c = 1;
+	public int repetido(int numero1, int numero2) {
+		int contador;
+		if(numero1 == 0) return 0; //condição de parada se n chegar a zero, fim do algoritmo
+		if(numero1 % 10 == numero2) { //comparo os 2 últimos algarismos do número n, se forem iguais a k, incremento o contador
+			contador = 1;
 		}else {
-			c = 0;
+			contador = 0;
 		}
-		return c + repetido(n /10, k); //divido n por 10 (eliminando assim o último dígito) e continuo a contagem
+		return contador + repetido(numero1 /10, numero2); //divido n por 10 (eliminando assim o último dígito) e continuo a contagem
 	}
 }
